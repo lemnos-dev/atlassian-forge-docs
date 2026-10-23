@@ -1,7 +1,7 @@
 # End-User License Agreement (EULA) & Terms of Use
 
 **Last Updated:** October 2026  
-**Applicable Products:** **Bulk User & License Hygiene for Jira Cloud** and **Markdown & Folder Hierarchy Importer for Confluence**
+**Applicable Products:** **Bulk User & License Hygiene for Jira Cloud**, **Markdown & Folder Hierarchy Importer for Confluence**, and **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira**
 
 ---
 
@@ -17,6 +17,7 @@ Subject to valid subscription licensing through the Atlassian Marketplace, the P
 
 - **Bulk User & License Hygiene for Jira Cloud** enforces built-in Pre-Flight Dry-Run verification and safety guardrails for `org-admins`, `site-admins`, and `app` bot accounts. However, the Customer's Jira Administrator remains solely responsible for reviewing the Pre-Flight Dry-Run report before executing live directory mutations (`REMOVE_FROM_GROUPS`, `DEACTIVATE_USERS`, or `DELETE_USERS`).
 - **Markdown & Folder Hierarchy Importer for Confluence** previews all `CREATE`, `UPDATE`, and `SKIP_UNCHANGED` actions before execution. Customer is responsible for verifying the target Confluence `Space ID` and `Root Parent Page ID` prior to running a wave import.
+- **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira** previews all `CREATE`, `UPDATE`, `SKIP_UNCHANGED`, and `OVER_BUDGET` (`32,768 B` guardrail) states before syncing `k6_spec_v1` Jira Issue Properties. Customer is responsible for reviewing the Pre-Flight Dry-Run plan prior to persisting batch specification updates.
 
 ## 4. Warranty Disclaimer & Limitation of Liability
 

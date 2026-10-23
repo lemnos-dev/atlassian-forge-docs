@@ -5,6 +5,7 @@
 **Applies to:**
 1. **Bulk User & License Hygiene for Jira Cloud** (`dev.lemnos.jira.bulk-user-hygiene`)
 2. **Markdown & Folder Hierarchy Importer for Confluence** (`dev.lemnos.confluence.markdown-hierarchy-importer`)
+3. **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira** (`dev.lemnos.jira.markdown-mermaid-bdd-studio`)
 
 ---
 

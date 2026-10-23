@@ -47,3 +47,27 @@ Existing Markdown importers on the Atlassian Marketplace flatten nested director
 3. Click **`Select Folder (webkitdirectory)`** to load your local `.md` tree (or click **`Load Demo Handbook (4 Files)`** to test with the built-in 4-file nested engineering handbook).
 4. Click **`Sync Live Space Hashes`** and **`1. Preview Hierarchy & Diff`** to review `CREATE`, `UPDATE`, and `SKIP_UNCHANGED` badges and inspect compiled XHTML.
 5. Click **`2. Import Tree Level-by-Level`** to publish all waves in topological order (`L0 -> LD`).
+
+---
+
+## Part 3: Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira (`k6-markdown-mermaid-field`)
+
+### Overview
+Existing Markdown and BDD custom field apps on the Atlassian Marketplace fail in Team-managed (Next-Gen) Jira projects because they rely on legacy Company-managed custom field renderer schemes, or they leak diagram source code to third-party rendering servers. **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira** stores compiled specifications in native Jira Issue Properties (`k6_spec_v1`) and surfaces as an out-of-the-box Issue Panel, Project Page, and Global Spec Studio across both **Team-managed (Next-Gen)** and **Company-managed** projects—with 100% client-side/Forge zero-egress rendering.
+
+### Key Features
+1. **Out-of-the-Box Next-Gen & Classic Support (`k6_spec_v1`):** Works immediately in Team-managed (Next-Gen) and Company-managed Jira Cloud projects without configuring custom field screens or field context schemes.
+2. **Gherkin BDD Parser & Automated `Then`-Step Quality Audit:**
+   - Parses `Feature`, `Background`, `Scenario`, `Scenario Outline`, `Given / When / Then / And / But`, and `Examples` tables into structured interactive BDD cards.
+   - Automatically flags incomplete acceptance criteria (`UNVERIFIED_SCENARIO` when a scenario omits a `Then` verification step) before sprint planning.
+3. **Zero-Egress Inline Mermaid SVG & Scoped LaTeX Math:**
+   - Compiles Mermaid `flowchart` (`LR`, `TD`) and `sequenceDiagram` blocks into deterministic inline `<svg>` and renders inline (`$...$`) and display (`$$...$$`) LaTeX math formulas (`\frac`, `\sqrt`, Greek symbols, subscripts/superscripts) without calling `mermaid.ink`, KaTeX CDNs, or external servers.
+4. **32-bit FNV-1a Incremental Sync & 32KB Issue Property Guardrail:**
+   - Computes 32-bit FNV-1a hashes to skip unchanged issue specs (`SKIP_UNCHANGED` = `0` HTTP PUT requests).
+   - Enforces Jira Cloud's hard `32,768 B` (`32 KB`) Issue Property limit prior to execution (`OVER_BUDGET` lock), preventing mid-batch HTTP 400 failures.
+
+### Quickstart Workflow
+1. Open any Jira Issue and click **Markdown, Mermaid, LaTeX & BDD Spec** in the Issue Panel (or open the Project / Global Spec Studio).
+2. Select an issue in the **Jira Issue Specification Queue** (or test immediately with the built-in 6-issue demo dataset via **Reset Demo Queue**).
+3. Author or insert **Gherkin Scenarios**, **Mermaid Flowcharts / Sequence Diagrams**, and **LaTeX SLA Formulas** with live side-by-side preview and byte-budget telemetry (`B / 32,768 B`).
+4. Click **`1. Dry-Run Plan`** to verify `CREATE`, `UPDATE`, `SKIP_UNCHANGED`, and `OVER_BUDGET` counts, then click **`2. Sync Changed Specs`** to persist changes to Jira Cloud (`k6_spec_v1`).

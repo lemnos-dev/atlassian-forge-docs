@@ -3,13 +3,14 @@
 **Applicable Products:**
 - **Bulk User & License Hygiene for Jira Cloud** (`k1-bulk-user-admin`)
 - **Markdown & Folder Hierarchy Importer for Confluence** (`k2-markdown-importer`)
+- **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira** (`k6-markdown-mermaid-field`)
 
 ---
 
 ## 1. How to Request Support or Report a Bug
 
 - **GitHub Issue Tracker (Recommended):** Open an issue on our public repository with:
-  1. App Name (`Bulk User & License Hygiene` or `Markdown & Folder Hierarchy Importer`)
+  1. App Name (`Bulk User & License Hygiene`, `Markdown & Folder Hierarchy Importer`, or `Markdown, Mermaid, LaTeX & BDD Spec Studio`)
   2. Browser & Atlassian Cloud site tier (`Free`, `Standard`, `Premium`, `Enterprise`)
   3. Steps to reproduce (or Dry-Run / Inspector JSON snippet — please redact any personal email addresses)
 - **Direct Email Support:** Contact the publisher support address listed on our Atlassian Marketplace Partner profile.

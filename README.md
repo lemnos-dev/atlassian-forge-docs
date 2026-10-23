@@ -10,12 +10,14 @@ Official documentation, privacy policy, terms of use, and support portal for Atl
    - *Two-Pass Seat & Waste Audit · Mandatory Pre-Flight Dry-Run · Org-Admin & Bot Safety Guardrails · RFC 4180 CSV Last-Active Import*
 2. **Markdown & Folder Hierarchy Importer for Confluence**
    - *Topological Folder Tree Preservation (`L0 → LD`) · Cross-Folder `<ri:page>` Link Resolution · GFM Tables & Alerts · 32-bit FNV-1a Incremental Sync*
+3. **Markdown, Mermaid, LaTeX & BDD Spec Studio for Jira**
+   - *Gherkin BDD Scenario & Then-Step Audit · Zero-Egress Inline Mermaid SVG & LaTeX Math · Team-Managed (Next-Gen) & Classic Ready (`k6_spec_v1`) · FNV-1a Diff & 32KB Property Guardrail*
 
 ---
 
 ## Legal, Security & Documentation Links
 
-- **[Administrator & User Documentation](./DOCUMENTATION.md)** — Setup, workflows, and feature reference for both applications.
+- **[Administrator & User Documentation](./DOCUMENTATION.md)** — Setup, workflows, and feature reference for all published applications.
 - **[Privacy & Data Security Policy](./PRIVACY_POLICY.md)** — Zero External Data Egress (`Runs on Atlassian`) architecture and scope disclosures.
 - **[End-User License Agreement (EULA) & Terms of Use](./TERMS_EULA.md)** — Licensing terms and administrator safety responsibilities.
 - **[Customer Support & Issue Tracker SLA](./SUPPORT.md)** — How to open a support ticket and our 24-hour business response SLA.
